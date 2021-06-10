@@ -5,17 +5,8 @@
         type="text"
         class="form-control"
         placeholder="Search by title"
-        [(ngModel)]="title"
+        [(ngModel)]="title" (keydown)="searchTitle()"
       />
-      <div class="input-group-append">
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          (click)="searchTitle()"
-        >
-          Search
-        </button>
-      </div>
     </div>
   </div>
   <div class="col-md-6">
