@@ -39,4 +39,8 @@ export class TutorialService {
   findByTitle(title: any): Observable<Tutorial[]> {
     return this.http.get<Tutorial[]>(`${baseUrl}?title=${title}`);
   }
+
+  findByOrder(): Observable<Tutorial[]> {
+    return this.http.get<Tutorial[]>(`${baseUrl}/drag`);
+  }
 }
